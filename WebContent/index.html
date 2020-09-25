@@ -7,10 +7,84 @@
 <style type="text/css">
 
 /* Header */
+#header_bg {
+width: 100%;
+height: 72px;
+background-image: url("./images/common/navbg.png");
+background-repeat: repeat-x;
+margin: 0px;
+padding: 0;
+z-index: 100;
+}
+
+#header_top {
+width: 980px;
+height: 72px;
+margin: 0px auto;
+}
+
+#header_logo {
+width: 140px;
+height: 57px;
+padding-right: 40px;
+float: left;
+}
+
+#header_menu {
+width: 130px;
+height: 57px;
+padding: 0px;
+float: left;
+}
+
+
+#header_language {
+display: block;
+width: 155px;
+height: 57px;
+padding: 0px;
+float: left;
+text-align: center;
+line-height: 57px;
+}
+
+#header_language a {
+font-size: 27px;
+color: #a2a1a1;
+text-decoration: none;
+font-weight: bold;
+}
+
+#header_sub {
+float: left;
+}
 
 /* Section */
+#main_notice {
+width: 100%;
+height: 120px;
+background-color: yellow;
+}
+
+#main_artist {
+width: 100%;
+height: 440px;
+background-color: green;
+}
+
+#main_toolbar {
+width: 100%;
+height: 126px;
+background-color: blue;
+}
 
 /* Footer */
+#footer_bg {
+width: 100%;
+height: 40px;
+background-color: purple;
+}
+}
 
 </style>
 </head>
@@ -19,32 +93,44 @@
 
 <!-- Header -->
 <header>
-<nav>
 <div id="header_bg">
 <div id="header_top">
+<nav id="header_logo" class="header_sub">
 <ul>
-<li id="header_logo"><a href="#"></a></li>
-<li class="header_menu"><a href="#">COMPANY</a></li>
-<li class="header_menu"><a href="#">ARTIST</a></li>
-<li class="header_menu"><a href="#">AUDITION</a></li>
-<li class="header_language"><a href="#">KO</a></li>
-<li class="header_language"><a href="#">EN</a></li>
-<li class="header_language"><a href="#">CN</a></li>
-<li class="header_language"><a href="#">JP</a></li>
-<li class="header_snsicon"><a href="#"></a></li>
-<li class="header_snsicon"><a href="#"></a></li>
-<li class="header_snsicon"><a href="#"></a></li>
-<li class="header_snsicon"><a href="#"></a></li>
+<li><a href="#"><img alt="" src="./images/common/jyplogo.png"></a></li>
 </ul>
-</div>
-</div>
 </nav>
+<nav id="header_menu" class="header_sub">
+<ul>
+<li><a href="#"><img alt="" src="./images/common/nav-company.png"></a></li>
+<li><a href="#"><img alt="" src="./images/common/nav-artist.png"></a></li>
+<li><a href="#"><img alt="" src="./images/common/nav-audition.png"></a></li>
+</ul>
+</nav>
+<nav id="header_language" class="header_sub">
+<ul>
+<li><a href="#">KO</a></li>
+<li><a href="#">EN</a></li>
+<li><a href="#">CN</a></li>
+<li><a href="#">JP</a></li>
+</ul>
+</nav>
+<nav id="header_snsicon" class="header_sub">
+<ul>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+<li><a href="#"></a></li>
+</ul>
+</nav>
+
+</div>
+</div>
 </header>
 
 
 <!-- Section -->
 <section id="main_notice">
-<div id="notice_bg">
 <div id="notice_top">
 <div id="notice">
 <ul>
@@ -55,7 +141,6 @@
 </div>
 <div id="newalbum">
 <div id="newalbum_image"></div>
-</div>
 </div>
 </div>
 </section>
@@ -70,8 +155,7 @@
 </section>
 
 <!-- Footer -->
-<footer>
-<div id="footer_bg">
+<footer id="footer_bg">
 <div id="footer_top">
 <div id="footer_menu"></div>
 <div id="footer_site">
@@ -80,7 +164,6 @@
 <option>JYP Store</option>
 <option>JYP_EDM</option>
 </select>
-</div>
 </div>
 </div>
 </footer>
